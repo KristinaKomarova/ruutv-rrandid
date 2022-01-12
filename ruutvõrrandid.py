@@ -104,19 +104,19 @@ def vaal():
     plt.grid(True)
     plt.show()
 def prillid():
-    x1=np.arange(-9,-1,0.5)#min max step
+    x1=np.arange(-9,-0.5,0.5)#min max step #sinine
     y1=(-1/16)*(x1+5)**2+2
-    x2=np.arange(1,9,0.5)#min max step
+    x2=np.arange(1,9.5,0.5)#min max step #oranž
     y2=(-1/16)*(x2-5)**2+2
-    x3=np.arange(-9,-1,0.5)#min max step
+    x3=np.arange(-9,-0.5,0.5)#min max step #roheline
     y3=(1/4)*(x3+5)**2-3
-    x4=np.arange(1,9,0.5)#min max step
+    x4=np.arange(1,9.5,0.5)#min max step #punane
     y4=(1/4)*(x4-5)**2-3
-    x5=np.arange(-9,-6,0.5)#min max step
+    x5=np.arange(-9,-5.5,0.5)#min max step #lilla
     y5=-(x5+7)**2+5
-    x6=np.arange(6,9,0.5)#min max step
+    x6=np.arange(6,9,0.5)#min max step #pruun
     y6=-(x6-7)**2+5
-    x7=np.arange(-1,1,0.5)#min max step
+    x7=np.arange(-1,1.1,0.5)#min max step #roosa
     y7=(-0.5*x7)**2+0.7
     fig=plt.figure()
     plt.plot(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7)
@@ -126,7 +126,25 @@ def prillid():
     plt.grid(True)
     plt.show()
 def vihmavari():
-    pass
+    x1=np.arange(-12,12,0.5)#min max step 
+    y1=(-1/18)*x1*x1+12
+    x2=np.arange(-4,4,0.5)#min max step
+    y2=(-1/8)*x2*x2+6
+    x3=np.arange(-9,-0.5,0.5)#min max step 
+    y3=(1/4)*(x3+5)**2-3
+    x4=np.arange(1,9.5,0.5)#min max step 
+    y4=(1/4)*(x4-5)**2-3
+    x5=np.arange(-9,-5.5,0.5)#min max step 
+    y5=-(x5+7)**2+5
+    x6=np.arange(6,9,0.5)#min max step 
+    y6=-(x6-7)**2+5
+    fig=plt.figure()
+    plt.plot(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6)
+    plt.title("ruutvõrrand")
+    plt.ylabel("y")
+    plt.xlabel("X")
+    plt.grid(True)
+    plt.show()
 aken=Tk()
 aken.geometry("650x200")
 aken.title("ruutvõrrand")
@@ -162,8 +180,8 @@ r1=Radiobutton(aken,text="vaal",variable=var,var=1,font="Calibri 26",command=vaa
 r2=Radiobutton(aken,text="prillid",variable=var,var=2,font="Calibri 26",command=prillid)
 r3=Radiobutton(aken,text="vihmavari",variable=var,var=3,font="Calibri 26",command=vihmavari)
 r1.pack()
-#r2.pack()
-#r3.pack()
+r2.pack()
+r3.pack()
 
 
 aken.mainloop()
