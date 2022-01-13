@@ -114,7 +114,7 @@ def prillid():
     y4=(1/4)*(x4-5)**2-3
     x5=np.arange(-9,-5.5,0.5)#min max step #lilla
     y5=-(x5+7)**2+5
-    x6=np.arange(6,9,0.5)#min max step #pruun
+    x6=np.arange(6,9.5,0.5)#min max step #pruun
     y6=-(x6-7)**2+5
     x7=np.arange(-1,1.1,0.5)#min max step #roosa
     y7=(-0.5*x7)**2+0.7
@@ -130,8 +130,8 @@ def vihmavari():
     y1=(-1/18)*x1*x1+12
     x2=np.arange(-4,4,0.5)#min max step
     y2=(-1/8)*x2*x2+6
-    x3=np.arange(-9,-0.5,0.5)#min max step 
-    y3=(1/4)*(x3+5)**2-3
+    x3=np.arange(-12,-4,0.5)#min max step 
+    y3=(-1/8)*(x3+5)**2-3
     x4=np.arange(1,9.5,0.5)#min max step 
     y4=(1/4)*(x4-5)**2-3
     x5=np.arange(-9,-5.5,0.5)#min max step 
